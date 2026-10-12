@@ -1,0 +1,832 @@
+{
+  "symbol": "562520",
+  "asset_name": "华夏中证智选1000成长创新策略ETF",
+  "data_type": "cn_fund",
+  "data_type_label": "A股基金",
+  "total_records": 1109,
+  "date_range": {
+    "start": "2022-03-08",
+    "end": "2026-10-08"
+  },
+  "fund_years": 4.6,
+  "data_quality": {
+    "data_source": "Eastmoney pingzhongdata",
+    "price_basis": "cumulative_nav",
+    "as_of": "2026-10-08",
+    "latest_verified": true,
+    "expected_records": 1109,
+    "parsed_records": 1109,
+    "max_gap_days": 11,
+    "analysis_start_override": null,
+    "source_history_start": null,
+    "source_history_records": null
+  },
+  "latest": {
+    "date": "2026-10-08",
+    "price": 1.2939,
+    "display_nav": 1.2939,
+    "cumulative_nav": 1.2939,
+    "display_daily_change": -2.43,
+    "rsi": 35.2,
+    "rsi_7": 23.2,
+    "percentile": 10.6,
+    "status": "弱势区",
+    "suggestion": "可开始关注，等待更好入场点",
+    "daily_change": -2.43,
+    "rsi_updated": "2026-10-08 21:54:36"
+  },
+  "recent_rsi": [
+    {
+      "date": "2026-09-11",
+      "rsi": 40.7,
+      "percentile": 20.9
+    },
+    {
+      "date": "2026-09-14",
+      "rsi": 42.9,
+      "percentile": 27.8,
+      "daily_change": 0.62
+    },
+    {
+      "date": "2026-09-15",
+      "rsi": 42.4,
+      "percentile": 26.3,
+      "daily_change": -0.19
+    },
+    {
+      "date": "2026-09-16",
+      "rsi": 48.7,
+      "percentile": 43.1,
+      "daily_change": 1.77
+    },
+    {
+      "date": "2026-09-17",
+      "rsi": 48.1,
+      "percentile": 41.5,
+      "daily_change": -0.17
+    },
+    {
+      "date": "2026-09-18",
+      "rsi": 55.0,
+      "percentile": 62.6,
+      "daily_change": 2.12
+    },
+    {
+      "date": "2026-09-21",
+      "rsi": 58.0,
+      "percentile": 70.6,
+      "daily_change": 1.01
+    },
+    {
+      "date": "2026-09-22",
+      "rsi": 58.3,
+      "percentile": 71.2,
+      "daily_change": 0.13
+    },
+    {
+      "date": "2026-09-23",
+      "rsi": 58.5,
+      "percentile": 72.1,
+      "daily_change": 0.07
+    },
+    {
+      "date": "2026-09-24",
+      "rsi": 50.2,
+      "percentile": 47.4,
+      "daily_change": -2.06
+    },
+    {
+      "date": "2026-09-28",
+      "rsi": 41.0,
+      "percentile": 22.1,
+      "daily_change": -3.1
+    },
+    {
+      "date": "2026-09-29",
+      "rsi": 41.7,
+      "percentile": 23.9,
+      "daily_change": 0.2
+    },
+    {
+      "date": "2026-09-30",
+      "rsi": 41.1,
+      "percentile": 22.6,
+      "daily_change": -0.2
+    },
+    {
+      "date": "2026-10-08",
+      "rsi": 35.2,
+      "percentile": 10.6,
+      "daily_change": -2.43
+    }
+  ],
+  "stats": {
+    "mean": 51.1,
+    "median": 51.2,
+    "min": 16.0,
+    "max": 89.2,
+    "total": 1095,
+    "oversold_pct": 4.3,
+    "overbought_pct": 6.9,
+    "percentile_values": {
+      "5": 30.5,
+      "10": 34.9,
+      "15": 38.2,
+      "20": 40.4,
+      "25": 42.0,
+      "30": 43.6,
+      "35": 45.9,
+      "40": 47.9,
+      "45": 49.3,
+      "50": 51.2,
+      "55": 53.0,
+      "60": 54.5,
+      "65": 56.1,
+      "70": 57.9,
+      "75": 59.5,
+      "80": 61.4,
+      "85": 63.6,
+      "90": 66.8,
+      "95": 73.0
+    },
+    "current_percentile": 10.6,
+    "distribution": [
+      {
+        "range": "15-20",
+        "count": 3,
+        "percent": 0.3
+      },
+      {
+        "range": "20-25",
+        "count": 10,
+        "percent": 0.9
+      },
+      {
+        "range": "25-30",
+        "count": 34,
+        "percent": 3.1
+      },
+      {
+        "range": "30-35",
+        "count": 64,
+        "percent": 5.8
+      },
+      {
+        "range": "35-40",
+        "count": 98,
+        "percent": 8.9
+      },
+      {
+        "range": "40-45",
+        "count": 159,
+        "percent": 14.5
+      },
+      {
+        "range": "45-50",
+        "count": 143,
+        "percent": 13.1
+      },
+      {
+        "range": "50-55",
+        "count": 172,
+        "percent": 15.7
+      },
+      {
+        "range": "55-60",
+        "count": 155,
+        "percent": 14.2
+      },
+      {
+        "range": "60-65",
+        "count": 117,
+        "percent": 10.7
+      },
+      {
+        "range": "65-70",
+        "count": 64,
+        "percent": 5.8
+      },
+      {
+        "range": "70-75",
+        "count": 34,
+        "percent": 3.1
+      },
+      {
+        "range": "75-80",
+        "count": 30,
+        "percent": 2.7
+      },
+      {
+        "range": "80-85",
+        "count": 10,
+        "percent": 0.9
+      },
+      {
+        "range": "85-90",
+        "count": 2,
+        "percent": 0.2
+      }
+    ]
+  },
+  "extremes": [
+    {
+      "date": "2022-04-26",
+      "rsi": 16.0,
+      "price": 0.7893,
+      "return_30d": 27.8,
+      "return_60d": 34.2,
+      "return_90d": 30.7
+    },
+    {
+      "date": "2022-04-25",
+      "rsi": 17.5,
+      "price": 0.808,
+      "return_30d": 23.7,
+      "return_60d": 31.6,
+      "return_90d": 27.3
+    },
+    {
+      "date": "2024-02-05",
+      "rsi": 19.2,
+      "price": 0.6991,
+      "return_30d": 27.8,
+      "return_60d": 32.6,
+      "return_90d": 21.7
+    },
+    {
+      "date": "2025-04-07",
+      "rsi": 20.1,
+      "price": 0.9317,
+      "return_30d": 11.7,
+      "return_60d": 14.6,
+      "return_90d": 32.2
+    },
+    {
+      "date": "2024-01-22",
+      "rsi": 21.0,
+      "price": 0.7982,
+      "return_30d": 13.1,
+      "return_60d": 11.5,
+      "return_90d": 9.5
+    },
+    {
+      "date": "2025-04-08",
+      "rsi": 22.5,
+      "price": 0.9389,
+      "return_30d": 9.5,
+      "return_60d": 14.0,
+      "return_90d": 33.0
+    },
+    {
+      "date": "2024-02-02",
+      "rsi": 22.7,
+      "price": 0.7338,
+      "return_30d": 22.6,
+      "return_60d": 25.5,
+      "return_90d": 13.0
+    },
+    {
+      "date": "2023-10-23",
+      "rsi": 23.2,
+      "price": 0.8722,
+      "return_30d": 7.3,
+      "return_60d": 0.6,
+      "return_90d": 1.4
+    },
+    {
+      "date": "2022-04-11",
+      "rsi": 23.9,
+      "price": 0.9092,
+      "return_30d": 2.0,
+      "return_60d": 17.1,
+      "return_90d": 21.5
+    },
+    {
+      "date": "2022-12-23",
+      "rsi": 23.9,
+      "price": 0.9461,
+      "return_30d": 16.4,
+      "return_60d": 15.0,
+      "return_90d": 11.3
+    }
+  ],
+  "backtest": {
+    "oversold": {
+      "40": {
+        "30": {
+          "signals": 47,
+          "win_rate": 48.9,
+          "avg_profit": 2.2,
+          "max_profit": 30.6,
+          "max_loss": -15.4,
+          "avg_drawdown": -6.5,
+          "max_drawdown": -21.4
+        },
+        "60": {
+          "signals": 45,
+          "win_rate": 53.3,
+          "avg_profit": 4.8,
+          "max_profit": 37.2,
+          "max_loss": -13.5,
+          "avg_drawdown": -9.0,
+          "max_drawdown": -23.1
+        },
+        "90": {
+          "signals": 43,
+          "win_rate": 65.1,
+          "avg_profit": 6.0,
+          "max_profit": 36.9,
+          "max_loss": -14.8,
+          "avg_drawdown": -11.2,
+          "max_drawdown": -24.6
+        }
+      },
+      "35": {
+        "30": {
+          "signals": 30,
+          "win_rate": 46.7,
+          "avg_profit": 0.9,
+          "max_profit": 23.5,
+          "max_loss": -15.4,
+          "avg_drawdown": -7.5,
+          "max_drawdown": -21.1
+        },
+        "60": {
+          "signals": 29,
+          "win_rate": 58.6,
+          "avg_profit": 4.3,
+          "max_profit": 32.4,
+          "max_loss": -12.8,
+          "avg_drawdown": -9.6,
+          "max_drawdown": -22.0
+        },
+        "90": {
+          "signals": 29,
+          "win_rate": 58.6,
+          "avg_profit": 5.7,
+          "max_profit": 32.6,
+          "max_loss": -18.3,
+          "avg_drawdown": -11.5,
+          "max_drawdown": -23.3
+        }
+      },
+      "30": {
+        "30": {
+          "signals": 20,
+          "win_rate": 85.0,
+          "avg_profit": 9.1,
+          "max_profit": 23.1,
+          "max_loss": -6.5,
+          "avg_drawdown": -4.9,
+          "max_drawdown": -17.2
+        },
+        "60": {
+          "signals": 19,
+          "win_rate": 68.4,
+          "avg_profit": 10.3,
+          "max_profit": 33.5,
+          "max_loss": -11.6,
+          "avg_drawdown": -6.2,
+          "max_drawdown": -17.2
+        },
+        "90": {
+          "signals": 19,
+          "win_rate": 73.7,
+          "avg_profit": 12.4,
+          "max_profit": 32.2,
+          "max_loss": -6.0,
+          "avg_drawdown": -7.4,
+          "max_drawdown": -21.6
+        }
+      },
+      "25": {
+        "30": {
+          "signals": 8,
+          "win_rate": 100.0,
+          "avg_profit": 12.2,
+          "max_profit": 22.6,
+          "max_loss": 2.0,
+          "avg_drawdown": -4.7,
+          "max_drawdown": -13.2
+        },
+        "60": {
+          "signals": 7,
+          "win_rate": 100.0,
+          "avg_profit": 15.2,
+          "max_profit": 25.5,
+          "max_loss": 0.6,
+          "avg_drawdown": -5.7,
+          "max_drawdown": -13.2
+        },
+        "90": {
+          "signals": 7,
+          "win_rate": 100.0,
+          "avg_profit": 15.2,
+          "max_profit": 32.2,
+          "max_loss": 1.4,
+          "avg_drawdown": -8.4,
+          "max_drawdown": -19.8
+        }
+      },
+      "22": {
+        "30": {
+          "signals": 4,
+          "win_rate": 100.0,
+          "avg_profit": 19.1,
+          "max_profit": 27.8,
+          "max_loss": 11.7,
+          "avg_drawdown": -1.5,
+          "max_drawdown": -12.4
+        },
+        "60": {
+          "signals": 4,
+          "win_rate": 100.0,
+          "avg_profit": 22.6,
+          "max_profit": 32.6,
+          "max_loss": 11.5,
+          "avg_drawdown": -1.5,
+          "max_drawdown": -12.4
+        },
+        "90": {
+          "signals": 4,
+          "win_rate": 100.0,
+          "avg_profit": 22.7,
+          "max_profit": 32.2,
+          "max_loss": 9.5,
+          "avg_drawdown": -1.5,
+          "max_drawdown": -12.4
+        }
+      }
+    },
+    "overbought": {
+      "60": {
+        "5": {
+          "signals": 51,
+          "drop_rate": 52.9,
+          "avg_return": 0.1,
+          "max_rise": 17.1,
+          "max_drop": -5.2,
+          "avg_drop": -2.5,
+          "avg_drawdown": -1.5,
+          "max_drawdown": -5.7
+        },
+        "10": {
+          "signals": 51,
+          "drop_rate": 52.9,
+          "avg_return": 0.5,
+          "max_rise": 13.6,
+          "max_drop": -6.1,
+          "avg_drop": -2.8,
+          "avg_drawdown": -2.2,
+          "max_drawdown": -8.3
+        },
+        "20": {
+          "signals": 51,
+          "drop_rate": 58.8,
+          "avg_return": 0.0,
+          "max_rise": 21.7,
+          "max_drop": -12.1,
+          "avg_drop": -4.8,
+          "avg_drawdown": -4.1,
+          "max_drawdown": -17.0
+        },
+        "30": {
+          "signals": 51,
+          "drop_rate": 54.9,
+          "avg_return": 0.1,
+          "max_rise": 25.9,
+          "max_drop": -15.5,
+          "avg_drop": -5.3,
+          "avg_drawdown": -5.2,
+          "max_drawdown": -17.9
+        }
+      },
+      "65": {
+        "5": {
+          "signals": 27,
+          "drop_rate": 37.0,
+          "avg_return": 0.8,
+          "max_rise": 17.1,
+          "max_drop": -6.9,
+          "avg_drop": -3.1,
+          "avg_drawdown": -1.3,
+          "max_drawdown": -6.9
+        },
+        "10": {
+          "signals": 27,
+          "drop_rate": 40.7,
+          "avg_return": 1.6,
+          "max_rise": 13.6,
+          "max_drop": -9.2,
+          "avg_drop": -3.1,
+          "avg_drawdown": -2.3,
+          "max_drawdown": -9.2
+        },
+        "20": {
+          "signals": 27,
+          "drop_rate": 48.1,
+          "avg_return": 1.6,
+          "max_rise": 21.7,
+          "max_drop": -12.1,
+          "avg_drop": -3.9,
+          "avg_drawdown": -3.5,
+          "max_drawdown": -12.1
+        },
+        "30": {
+          "signals": 27,
+          "drop_rate": 40.7,
+          "avg_return": 1.5,
+          "max_rise": 25.9,
+          "max_drop": -16.4,
+          "avg_drop": -6.1,
+          "avg_drawdown": -4.4,
+          "max_drawdown": -16.4
+        }
+      },
+      "70": {
+        "5": {
+          "signals": 12,
+          "drop_rate": 25.0,
+          "avg_return": 1.6,
+          "max_rise": 8.2,
+          "max_drop": -9.4,
+          "avg_drop": -4.0,
+          "avg_drawdown": -0.7,
+          "max_drawdown": -9.4
+        },
+        "10": {
+          "signals": 12,
+          "drop_rate": 33.3,
+          "avg_return": 2.8,
+          "max_rise": 13.5,
+          "max_drop": -7.5,
+          "avg_drop": -3.3,
+          "avg_drawdown": -1.0,
+          "max_drawdown": -9.4
+        },
+        "20": {
+          "signals": 12,
+          "drop_rate": 16.7,
+          "avg_return": 4.4,
+          "max_rise": 12.6,
+          "max_drop": -8.8,
+          "avg_drop": -6.6,
+          "avg_drawdown": -1.6,
+          "max_drawdown": -9.4
+        },
+        "30": {
+          "signals": 12,
+          "drop_rate": 16.7,
+          "avg_return": 6.9,
+          "max_rise": 16.8,
+          "max_drop": -4.4,
+          "avg_drop": -3.5,
+          "avg_drawdown": -1.6,
+          "max_drawdown": -9.9
+        }
+      },
+      "75": {
+        "5": {
+          "signals": 11,
+          "drop_rate": 45.5,
+          "avg_return": 0.5,
+          "max_rise": 4.5,
+          "max_drop": -5.8,
+          "avg_drop": -2.1,
+          "avg_drawdown": -1.1,
+          "max_drawdown": -5.8
+        },
+        "10": {
+          "signals": 11,
+          "drop_rate": 36.4,
+          "avg_return": 2.1,
+          "max_rise": 7.2,
+          "max_drop": -5.6,
+          "avg_drop": -2.3,
+          "avg_drawdown": -1.5,
+          "max_drawdown": -5.8
+        },
+        "20": {
+          "signals": 11,
+          "drop_rate": 36.4,
+          "avg_return": 2.7,
+          "max_rise": 10.5,
+          "max_drop": -2.0,
+          "avg_drop": -1.3,
+          "avg_drawdown": -2.0,
+          "max_drawdown": -5.8
+        },
+        "30": {
+          "signals": 11,
+          "drop_rate": 45.5,
+          "avg_return": 1.7,
+          "max_rise": 10.2,
+          "max_drop": -5.6,
+          "avg_drop": -3.1,
+          "avg_drawdown": -2.5,
+          "max_drawdown": -6.6
+        }
+      },
+      "80": {
+        "5": {
+          "signals": 8,
+          "drop_rate": 12.5,
+          "avg_return": 1.4,
+          "max_rise": 4.1,
+          "max_drop": -1.0,
+          "avg_drop": -1.0,
+          "avg_drawdown": -1.0,
+          "max_drawdown": -4.5
+        },
+        "10": {
+          "signals": 8,
+          "drop_rate": 25.0,
+          "avg_return": 2.7,
+          "max_rise": 7.3,
+          "max_drop": -1.5,
+          "avg_drop": -1.3,
+          "avg_drawdown": -1.5,
+          "max_drawdown": -5.3
+        },
+        "20": {
+          "signals": 8,
+          "drop_rate": 12.5,
+          "avg_return": 3.1,
+          "max_rise": 11.4,
+          "max_drop": -1.2,
+          "avg_drop": -1.2,
+          "avg_drawdown": -2.3,
+          "max_drawdown": -5.3
+        },
+        "30": {
+          "signals": 8,
+          "drop_rate": 25.0,
+          "avg_return": 3.6,
+          "max_rise": 8.1,
+          "max_drop": -2.1,
+          "avg_drop": -1.4,
+          "avg_drawdown": -2.5,
+          "max_drawdown": -5.3
+        }
+      }
+    }
+  },
+  "bollinger": {
+    "ma20": 1.3553,
+    "upper": 1.4103,
+    "lower": 1.3003,
+    "current_price": 1.2939,
+    "percent_b": -5.8,
+    "bandwidth": 8.12,
+    "dist_to_lower": -0.49,
+    "dist_to_upper": -8.26,
+    "position": "触及下轨",
+    "signal": "买入",
+    "period": 20
+  },
+  "multi_tf_rsi": {
+    "RSI_7": {
+      "period": 7,
+      "value": 23.2,
+      "percentile": 5.0,
+      "zone": "极度超卖",
+      "mean": 51.4,
+      "min": 8.4,
+      "max": 96.4
+    },
+    "RSI_14": {
+      "period": 14,
+      "value": 35.2,
+      "percentile": 10.6,
+      "zone": "偏弱",
+      "mean": 51.1,
+      "min": 16.0,
+      "max": 89.2
+    },
+    "RSI_28": {
+      "period": 28,
+      "value": 42.2,
+      "percentile": 16.4,
+      "zone": "偏弱",
+      "mean": 51.1,
+      "min": 21.3,
+      "max": 77.4
+    },
+    "consensus": "多周期偏弱 (看涨潜力)"
+  },
+  "rolling_backtest": {
+    "window_days": 60,
+    "current_rsi": 35.2,
+    "接近超卖": {
+      "count": 5,
+      "avg_5d_return": -1.24,
+      "win_rate": 40.0
+    },
+    "偏弱": {
+      "count": 18,
+      "avg_5d_return": 0.77,
+      "win_rate": 64.3
+    },
+    "中性": {
+      "count": 28,
+      "avg_5d_return": 0.02,
+      "win_rate": 51.9
+    },
+    "偏强": {
+      "count": 7,
+      "avg_5d_return": -4.75,
+      "win_rate": 0.0
+    }
+  },
+  "weekly_rsi": {
+    "value": 42.3,
+    "percentile": 20.8,
+    "zone": "偏弱",
+    "mean": 52.4,
+    "min": 22.3,
+    "max": 79.2,
+    "total_weeks": 221,
+    "as_of": "2026-10-09"
+  },
+  "scoring": {
+    "opportunity_score": 63.0,
+    "risk_score": 17.0,
+    "action": "buy",
+    "action_label": "🟢 买入",
+    "details": {
+      "opportunity": {
+        "rsi_percentile": {
+          "score": 80,
+          "weight": 0.25,
+          "value": 10.6
+        },
+        "bollinger": {
+          "score": 80,
+          "weight": 0.15,
+          "value": "买入"
+        },
+        "backtest_winrate": {
+          "score": 40,
+          "weight": 0.2,
+          "value": 53.3,
+          "threshold": 40
+        },
+        "momentum": {
+          "score": 70,
+          "weight": 0.1
+        },
+        "extremes": {
+          "score": 40,
+          "weight": 0.1,
+          "value": 16.0
+        },
+        "multi_tf_rsi": {
+          "score": 70,
+          "weight": 0.1,
+          "value": "多周期偏弱 (看涨潜力)"
+        },
+        "trend_strength": {
+          "score": 50,
+          "weight": 0.1,
+          "value": ""
+        }
+      },
+      "risk": {
+        "rsi_percentile": {
+          "score": 0,
+          "weight": 0.25,
+          "value": 10.6
+        },
+        "bollinger": {
+          "score": 0,
+          "weight": 0.15,
+          "value": "买入"
+        },
+        "backtest_droprate": {
+          "score": 20,
+          "weight": 0.2,
+          "value": null,
+          "threshold": 0
+        },
+        "momentum": {
+          "score": 40,
+          "weight": 0.1
+        },
+        "overbought_duration": {
+          "score": 10,
+          "weight": 0.1
+        },
+        "multi_tf_rsi": {
+          "score": 30,
+          "weight": 0.1,
+          "value": "多周期偏弱 (看涨潜力)"
+        },
+        "trend_strength": {
+          "score": 50,
+          "weight": 0.1,
+          "value": ""
+        }
+      }
+    }
+  }
+}

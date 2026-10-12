@@ -1,0 +1,114 @@
+//@version=5
+// 红利波段 RSI 策略 v2
+// 以 008164 南方标普红利低波50 RSI(14) 为信号
+// 四档加仓 + 三档卖出
+// 修复：每次买入用唯一 ID，卖出按金额平仓
+
+strategy("红利波段RSI策略", overlay=false, initial_capital=600000, default_qty_type=strategy.cash, default_qty_value=10000, commission_type=strategy.commission.percent, commission_value=0.15, pyramiding=10)
+
+// ============================================================
+// 参数
+// ============================================================
+
+rsi_length = input.int(14, "RSI周期", minval=1)
+rsi_src = input.source(close, "RSI来源")
+
+// 加仓阈值
+buy_tier0 = input.int(35, "启动加仓 RSI<", minval=1, maxval=100)
+buy_tier1 = input.int(32, "加仓 RSI<", minval=1, maxval=100)
+buy_tier2 = input.int(30, "重仓 RSI<", minval=1, maxval=100)
+buy_tier3 = input.int(25, "满仓 RSI<", minval=1, maxval=100)
+
+// 加仓金额
+buy_amount0 = input.float(60000, "启动金额", minval=0, step=1000)
+buy_amount1 = input.float(90000, "加仓金额", minval=0, step=1000)
+buy_amount2 = input.float(150000, "重仓金额", minval=0, step=1000)
+buy_amount3 = input.float(90000, "满仓金额", minval=0, step=1000)
+
+// 卖出阈值
+sell_tier0 = input.int(65, "卖出启动仓 RSI>", minval=1, maxval=100)
+sell_tier1 = input.int(70, "卖出加仓 RSI>", minval=1, maxval=100)
+sell_tier2 = input.int(75, "卖出重仓+满仓 RSI>", minval=1, maxval=100)
+
+// 底仓
+base_position = input.float(180000, "底仓金额", minval=0, step=1000)
+
+// ============================================================
+// 计算 RSI
+// ============================================================
+
+rsi = ta.rsi(rsi_src, rsi_length)
+
+// ============================================================
+// 买入信号
+// ============================================================
+
+rsi_below_35 = rsi < buy_tier0 and rsi[1] >= buy_tier0
+rsi_below_32 = rsi < buy_tier1 and rsi[1] >= buy_tier1
+rsi_below_30 = rsi < buy_tier2 and rsi[1] >= buy_tier2
+rsi_below_25 = rsi < buy_tier3 and rsi[1] >= buy_tier3
+
+buy_signal0 = rsi_below_35
+buy_signal1 = rsi_below_32
+buy_signal2 = rsi_below_30
+buy_signal3 = rsi_below_25
+
+// ============================================================
+// 卖出信号
+// ============================================================
+
+sell_signal0 = ta.crossover(rsi, sell_tier0)
+sell_signal1 = ta.crossover(rsi, sell_tier1)
+sell_signal2 = ta.crossover(rsi, sell_tier2)
+
+// ============================================================
+// 执行交易（每次用唯一 ID，靠 pyramiding 允许叠加）
+// ============================================================
+
+// 底仓
+strategy.entry("底仓", strategy.long, qty=base_position / close, when=bar_index == 0)
+
+// 买入 — 每次用 bar_index 做唯一 ID
+if buy_signal0
+    strategy.entry("T0_" + str.tostring(bar_index), strategy.long, qty=buy_amount0 / close)
+if buy_signal1
+    strategy.entry("T1_" + str.tostring(bar_index), strategy.long, qty=buy_amount1 / close)
+if buy_signal2
+    strategy.entry("T2_" + str.tostring(bar_index), strategy.long, qty=buy_amount2 / close)
+if buy_signal3
+    strategy.entry("T3_" + str.tostring(bar_index), strategy.long, qty=buy_amount3 / close)
+
+// 卖出 — 按金额平仓
+if sell_signal0
+    strategy.close("T0_", immediately=true)
+if sell_signal1
+    strategy.close("T1_", immediately=true)
+if sell_signal2
+    strategy.close("T2_", immediately=true)
+    strategy.close("T3_", immediately=true)
+
+// ============================================================
+// 可视化
+// ============================================================
+
+plot(rsi, "RSI", color=color.new(#2962FF, 0), linewidth=2)
+
+hline(buy_tier0, "启动线", color=color.new(#FF9800, 0), linestyle=hline.style_dashed)
+hline(buy_tier1, "加仓线", color=color.new(#FF5722, 0), linestyle=hline.style_dashed)
+hline(buy_tier2, "重仓线", color=color.new(#F44336, 0), linestyle=hline.style_dashed)
+hline(buy_tier3, "满仓线", color=color.new(#B71C1C, 0), linestyle=hline.style_dashed)
+hline(sell_tier0, "卖出1线", color=color.new(#4CAF50, 0), linestyle=hline.style_dashed)
+hline(sell_tier1, "卖出2线", color=color.new(#2E7D32, 0), linestyle=hline.style_dashed)
+hline(sell_tier2, "卖出3线", color=color.new(#1B5E20, 0), linestyle=hline.style_dashed)
+
+fill(plot(100), plot(70), color=color.new(#F44336, 90), title="超买区")
+fill(plot(30), plot(0), color=color.new(#4CAF50, 90), title="超卖区")
+hline(50, "中线", color=color.new(#9E9E9E, 50), linestyle=hline.style_dotted)
+
+plotshape(buy_signal0, "启动", shape.triangleup, location.bottom, color=color.new(#FF9800, 0), size=size.small)
+plotshape(buy_signal1, "加仓", shape.triangleup, location.bottom, color=color.new(#FF5722, 0), size=size.small)
+plotshape(buy_signal2, "重仓", shape.triangleup, location.bottom, color=color.new(#F44336, 0), size=size.normal)
+plotshape(buy_signal3, "满仓", shape.triangleup, location.bottom, color=color.new(#B71C1C, 0), size=size.large)
+plotshape(sell_signal0, "卖T0", shape.triangledown, location.top, color=color.new(#4CAF50, 0), size=size.small)
+plotshape(sell_signal1, "卖T1", shape.triangledown, location.top, color=color.new(#2E7D32, 0), size=size.small)
+plotshape(sell_signal2, "卖T2/3", shape.triangledown, location.top, color=color.new(#1B5E20, 0), size=size.normal)

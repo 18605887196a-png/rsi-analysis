@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "note": "本人基金持仓快照，用于 rsi-analysis 抄底/再平衡参考。更新时直接覆盖本文件 latest 字段，并把旧状态追加到 snapshots/。",
+  "updated_at": "2026-08-10",
+  "currency": "CNY",
+  "amount_unit": "yuan",
+  "total": 752525.20,
+  "total_profit": 24773.40,
+  "total_cost": 727751.80,
+  "overall_return_pct": 3.40,
+  "allocation": {
+    "债券":     {"amount": 530149.57, "weight_pct": 70.45, "profit": 14229.69},
+    "固收":     {"amount": 67755.89,  "weight_pct": 9.00,  "profit": 690.89},
+    "红利":     {"amount": 127461.27, "weight_pct": 16.94, "profit": 5782.54},
+    "环球视野_QDII": {"amount": 27158.47, "weight_pct": 3.61, "profit": 4070.28}
+  },
+  "latest": {
+    "债券": [
+      {"name": "长盛盛裕纯债D",             "amount": 332908.18, "weight_pct": 44.24, "profit": 7902.83},
+      {"name": "东方添益债券",             "amount": 114108.60, "weight_pct": 15.16, "profit": 3583.84},
+      {"name": "鹏华丰禄债券",             "amount": 24527.36,  "weight_pct": 3.26,  "profit": 632.61},
+      {"name": "东方臻选纯债债券C",         "amount": 22621.12,  "weight_pct": 3.01,  "profit": 844.94},
+      {"name": "国寿安保泰恒纯债债券",       "amount": 17561.98,  "weight_pct": 2.33,  "profit": 878.11},
+      {"name": "国寿安保尊益信用纯债债券",   "amount": 15087.06,  "weight_pct": 2.00,  "profit": 387.06},
+      {"name": "中银国有企业债A",          "amount": 3335.27,   "weight_pct": 0.44,  "profit": 0.30}
+    ],
+    "固收": [
+      {"name": "长盛全债指数增强债券C",       "amount": 21445.64, "weight_pct": 2.85, "profit": 394.09},
+      {"name": "易方达增强回报债券B",        "amount": 13147.37, "weight_pct": 1.75, "profit": 147.37},
+      {"name": "华泰柏瑞享利混合C",         "amount": 10455.86, "weight_pct": 1.39, "profit": 46.75},
+      {"name": "新华增盈回报债券",          "amount": 9832.50,  "weight_pct": 1.31, "profit": 28.13},
+      {"name": "鹏华弘利混合C",            "amount": 5716.87,  "weight_pct": 0.76, "profit": 24.61},
+      {"name": "交银安心收益债券D",         "amount": 5382.41,  "weight_pct": 0.72, "profit": 30.42},
+      {"name": "华夏双债债券A",            "amount": 1001.95,  "weight_pct": 0.13, "profit": 16.80},
+      {"name": "国寿安保稳荣混合C",         "amount": 773.29,   "weight_pct": 0.10, "profit": 2.72}
+    ],
+    "红利": [
+      {"name": "华泰柏瑞中证红利低波ETF联接C",        "amount": 29758.82, "weight_pct": 3.95, "profit": 1099.66},
+      {"name": "嘉实沪深300红利低波动ETF联接C",      "amount": 28706.60, "weight_pct": 3.81, "profit": 1031.05},
+      {"name": "南方标普红利低波50ETF联接C",         "amount": 27670.56, "weight_pct": 3.68, "profit": 1392.26},
+      {"name": "招商中证红利ETF联接C",             "amount": 17801.09, "weight_pct": 2.37, "profit": 887.49},
+      {"name": "华宝标普中国A股红利机会ETF联接C",     "amount": 14698.93, "weight_pct": 1.95, "profit": 300.73},
+      {"name": "华泰柏瑞中证中央企业红利ETF联接",     "amount": 5027.35,  "weight_pct": 0.67, "profit": 526.76},
+      {"name": "景顺长城沪港深红利成长低波指数E",     "amount": 2724.40,  "weight_pct": 0.36, "profit": 473.37},
+      {"name": "景顺长城中证国新港股通央企红利ETF联接", "amount": 1073.52,  "weight_pct": 0.14, "profit": 71.22}
+    ],
+    "环球视野_QDII": [
+      {"name": "交银环球精选混合(QDII)A",          "amount": 8444.50,  "weight_pct": 1.12, "profit": 698.31},
+      {"name": "长信标普100等权重指数人民币",        "amount": 6368.80,  "weight_pct": 0.85, "profit": 163.63},
+      {"name": "摩根亚洲股息人民币派息",           "amount": 5104.65,  "weight_pct": 0.68, "profit": 1225.70},
+      {"name": "广发全球稳健配置混合(QDII)人民币C",   "amount": 3561.61,  "weight_pct": 0.47, "profit": -18.33},
+      {"name": "交银环球精选混合(QDII)C",          "amount": 1686.09,  "weight_pct": 0.22, "profit": 57.74},
+      {"name": "汇添富全球移动互联混合(QDII)人民币",  "amount": 1171.01,  "weight_pct": 0.16, "profit": 1951.66},
+      {"name": "广发美国房地产指数人民币(QDII)C",    "amount": 821.81,   "weight_pct": 0.11, "profit": -8.43}
+    ]
+  }
+}
